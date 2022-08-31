@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+$main-color: #00ab6b;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+#flip {
+  height: 65px;
+  overflow: hidden;
+}
+
+#flip > div h1 {
+  color: rgb(24, 23, 23);
+  margin-bottom: 45px;
+  display: inline-block;
+  color: #2d2d2d;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+.hero-title {
+  font-size: 48px;
+  color: #2d2d2d;
+}
+.text-main {
+  color: $main-color;
+}
+.text-justify {
+  text-align: justify;
+}
+.about-year {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(51, 51, 51);
+}
+.about-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+.text-about-right {
+  font-size: 18px;
+}
+.article-title {
+  font-size: 36px;
+}
+.article-text {
+  font-size: 18px;
+}
+.new-article {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+footer {
+  padding: 20px;
+  background-color: #e0e2e1;
+}
+.btn-custom {
+  padding: 20px;
+  background-color: #285c49;
+}
+
+@media (max-width: 575.98px) {
+  #flip {
+    display: none;
+  }
+  .btn-mobile {
+    width: 100%;
+    border: 1px solid red;
+  }
+  .image img {
+    display: none;
+  }
+}
